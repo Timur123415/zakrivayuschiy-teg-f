@@ -1,6 +1,6 @@
 :root {
     --main-font-family: Inter, sans-serif;
-    --accent-font-family: 'Press Start 2P';
+    --accent-font-family: 'Press Start 2P', fantasy;
 }
 
 @media (prefers-color-scheme: light) {
