@@ -45,7 +45,7 @@
 
 .header__text {
   font-family: var(--accent-font-family);
-  font-size: clamp(18px, 2.5vw, 23px);
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
   margin-bottom: 25px;
 }
@@ -197,6 +197,7 @@
 .card__text {
   margin: 25px;
   font-weight: var(--text-font-weight);
+  font-size: 18px;
 }
 
 .card__buttons {
@@ -216,7 +217,6 @@
   justify-content: center;
   border: 2px solid transparent;
   transition: border 0.3s ease;
-  margin-right: 12px;
 }
 
 .like-icon {
@@ -241,7 +241,7 @@
 }
 
 .sparks {
-  fill: #ff0000;
+  fill: var(--color-heart);
   opacity: 0;
 }
 
@@ -319,36 +319,13 @@
 }
 
 .card__icon-button:active .main-body {
-  fill: #ff0000;
+  fill: var(--color-heart);
   transition: fill .3s linear .05s;
 }
 
 .card__icon-button:active .core {
-  fill: #ff0000;
+  fill: var(--color-heart);
   transition: fill .3s linear;
-}
-
-.like-icon.is-liked .main-body {
-  fill: #ff0000;
-  transition: fill .3s linear .05s;
-}
-
-.like-icon.is-liked .core {
-  fill: #ff0000;
-  transition: fill .3s linear;
-}
-
-.like-icon.is-liked .contour {
-  fill: #ff0000;
-  transition: fill .3s linear 0.06s;
-}
-
-.is-liked .heart {
-  animation: like-first .3s ease-in .1s alternate;
-}
-
-.is-liked .sparks {
-  animation: like-second .3s ease-in .3s alternate;
 }
 
 
@@ -497,7 +474,9 @@ dialog::backdrop {
   body {
     min-height: 100vh;
   }
-  
+  .header {
+    padding: 120px 0 23px;
+  }
   .header__title {
     font-size: 49px;
   }
