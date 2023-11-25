@@ -48,3 +48,27 @@
     opacity: 1;
   }
 }
+
+
+.like-icon.is-liked .main-body {
+  fill: var(--color-heart);
+  transition: fill .3s linear .05s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--color-heart);
+  transition: fill .3s linear;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--color-heart);
+  transition: fill .3s linear 0.06s;
+}
+
+.is-liked .heart {
+  animation: like-first .3s ease-in .1s alternate;
+}
+
+.is-liked .sparks {
+  animation: like-second .3s ease-in .3s alternate;
+}
