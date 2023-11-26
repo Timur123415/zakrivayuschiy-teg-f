@@ -80,7 +80,8 @@
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 7px;
+  margin-left: 19px;
 }
 
 .theme-menu__button:disabled {
@@ -112,7 +113,6 @@
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 52px;
 }
 
 .card {
